@@ -12,7 +12,8 @@
 
     <div class="form-group">
       
-      <%= f.input :company, class: 'form-control' %>
+      <%= f.label :company %>
+      <%= f.select :company, options_for_select(["Particulier","Entreprise","Association","Institution"],:disabled => ["Select One"]), :class => 'genForm_dropBox' %>
     </div>
 
     <div class="form-group">
