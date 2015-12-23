@@ -13,18 +13,18 @@
     <div class="form-group">
       
       <%= f.label :company %>
-      <%= f.select :company, options_for_select(["Particulier","Entreprise","Association","Institution"],:disabled => ["Select One"]), :class => 'genForm_dropBox' %>
+      <%= f.select :company, options_for_select([t("users.individual"),t("users.company"),t("users.association"),t("users.institution")],:disabled => ["Select One"]), :class => 'genForm_dropBox' %>
     </div>
 
     <div class="form-group">
-      
-      <%= f.input :status, class: 'form-control' %>
+      <%= f.label :status %>
+      <%= f.select :status, options_for_select([t("users.admin"),t("users.staff"),t("users.client")],:disabled => ["Select One"]), :class => 'genForm_dropBox' %>
     </div>
 
 
 	<div class="form-actions">
 
-    <%= f.button :submit, class: "btn btn-default" %>
+    <%= f.submit t("users.save"), class: "btn btn-default" %>
 
   	</div>
 

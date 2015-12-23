@@ -1,0 +1,43 @@
+nl:
+  users:
+    list: "Gebruikers Lijst"
+    individual: "Individueel"
+    company: "Bedrijf"
+    association: "Associatie"
+    institution: "Institutie"
+    save: "Opslaan"
+    remember_me: "Hou mij aangemeld"
+    forgot_password: "Wachtwoord vergeten?"
+    admin: "Admin"
+    staff: "Bediende"
+    client: "Klant"
+    leave_this_field: "Laat die blank indien u uw wachtwoord niet willen veranderen."
+    must_enter_password: "U moet uw geldige wachtwoord schrijven om veranderingen te valideren."
+
+
+  activerecord:
+    attributes:
+      user: 
+        name: "Naam"
+        first_name: "Voornaam"
+        company: "Individueel, Bedrijf, Associatie of Institutie"
+        status: "Status"
+        user: "Gebruiker"
+        password: "Wachtwoord"
+        password_confirmation: "Wachtwoord bevestiging"
+
+  helpers:
+    submit:
+      # This will be the default ones, will take effect if no other
+      # are specifically defined for the models.
+      create: "%{model} creëren"
+      update: "%{model} wijzigen"
+
+  menu:
+    home: "Home"
+    about: "Wie zijn wij?"
+    edit_account: "Uw rekening bijwerken"
+    sign_in: "Aanmelden"
+    sign_up: "Registreren"
+    sign_out: "Uitloggen"
+    users: "Gebruikers"

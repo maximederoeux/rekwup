@@ -1,3 +1,46 @@
 fr:
   users:
     list: "Liste des Utilisateurs"
+    individual: "Particulier"
+    company: "Société"
+    association: "Association"
+    institution: "Institution"
+    save: "Enregistrer"
+    remember_me: "Se souvenir de moi"
+    forgot_password: "Mot de passe oublié?"
+    admin: "Admin"
+    staff: "Employé"
+    client: "Client"
+    leave_this_field: "Laissez ces champs blancs si vous ne voulez pas modifier votre mot de passe."
+    must_enter_password: "Vous devez entrer votre mot de passe actuel pour enregistrer ces changements."
+
+
+
+
+  activerecord:
+    attributes:
+      user:
+        name: "Nom"
+        first_name: "Prénom"
+        company: "Particulier, Société, Association ou Institution"
+        status: "Statut"
+        password: "Mot de passe"
+        password_confirmation: "Confirmation de mot de passe"
+
+  helpers:
+    submit:
+      # This will be the default ones, will take effect if no other
+      # are specifically defined for the models.
+      create: "Créer %{model}"
+      update: "Modifier %{model}"
+
+  menu:
+    home: "Accueil"
+    about: "A propos"
+    edit_account: "Modifier votre compte"
+    sign_in: "Se connecter"
+    sign_up: "S'enregistrer"
+    sign_out: "Se déconnecter"
+    users: "Utilisateurs"
+
+

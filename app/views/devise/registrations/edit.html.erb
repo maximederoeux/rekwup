@@ -9,22 +9,6 @@
     </div>
 
     <div class="form-group">
-      <%= f.label :first_name %>
-      <%= f.text_field :first_name, class: 'form-control' %>
-    </div>
-
-    <div class="form-group">
-      <%= f.label :company %>
-      <%= f.text_field :company, class: 'form-control' %>
-    </div>
-
-    <div class="form-group">
-      <%= f.label :status %>
-      <%= f.text_field :status, class: 'form-control' %>
-    </div>
-
-
-    <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -32,16 +16,8 @@
       <% end %>
     </div>
 
-    
-
-
-
-  
-
-
-
     <fieldset>
-      <p>Leave these fields blank if you don't want to change your password.</p>
+      <p><%= t("users.leave_this_field") %></p>
       <div class="form-group">
         <%= f.label :password %>
         <%= f.password_field :password, :autocomplete => 'off', class: 'form-control' %>
@@ -55,7 +31,7 @@
 
 
     <fieldset>
-      <p>You must enter your current password to make changes.</p>
+      <p><%= t("users.must_enter_password") %></p>
       <div class="form-group">
         <%= f.label :current_password %>
         <%= f.password_field :current_password, class: 'form-control' %>
@@ -68,8 +44,8 @@
 </div>
 
 
-<div class="authform">
-<h3>Cancel Account</h3>
-<p>Unhappy? We'll be sad to see you go.</p>
-<%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button right' %>
-</div>
+<!-- <div class="authform"> -->
+<!-- <h3>Cancel Account</h3> -->
+<!-- <p>Unhappy? We'll be sad to see you go.</p> -->
+<!-- <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button right' %> -->
+<!-- </div> -->

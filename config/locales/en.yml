@@ -21,5 +21,45 @@
 
 en:
   users:
-    list: "Users' List"
+    list: "Users List"
+    individual: "Invividual"
+    company: "Company"
+    association: "Association"
+    institution: "Institution"
+    save: "Save"
+    remember_me: "Remember me"
+    forgot_password: "Forgot password?"
+    admin: "Admin"
+    staff: "Staff"
+    client: "Client"
+    leave_this_field: "Leave these fields blank if you don't want to change your password."
+    must_enter_password: "You must enter your current password to make changes."
+
+
+  activerecord:
+    attributes:
+      user:
+        name: "Last Name"
+        first_name: "First Name"
+        company: "Individual, Company, Association or Institution"
+        status: "Status"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        
+  helpers:
+    submit:
+      # This will be the default ones, will take effect if no other
+      # are specifically defined for the models.
+      create: "Create %{model}"
+      update: "Modify %{model}"
+
+  menu:
+    home: "Home"
+    about: "About"
+    edit_account: "Edit Account"
+    sign_in: "Sign in"
+    sign_up: "Sign up"
+    sign_out: "Sign out"
+    users: "Users"
+
 
