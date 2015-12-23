@@ -45,7 +45,7 @@ en:
         status: "Status"
         password: "Password"
         password_confirmation: "Password confirmation"
-        
+
   helpers:
     submit:
       # This will be the default ones, will take effect if no other
@@ -61,5 +61,6 @@ en:
     sign_up: "Sign up"
     sign_out: "Sign out"
     users: "Users"
+    edit_profile: "Edit profile"
 
 

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 	devise_for :users 
 	resources :users
-	root to: 'users#index'
+	root to: 'visitors#index'
 	
 	 
 end

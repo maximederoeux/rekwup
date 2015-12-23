@@ -39,8 +39,9 @@ fr:
     about: "A propos"
     edit_account: "Modifier votre compte"
     sign_in: "Se connecter"
-    sign_up: "S'enregistrer"
+    sign_up: "Créer un compte"
     sign_out: "Se déconnecter"
     users: "Utilisateurs"
+    edit_profile: "Editer votre profil"
 
 
