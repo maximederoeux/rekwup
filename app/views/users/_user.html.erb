@@ -1,2 +1,24 @@
+<% if user_signed_in? %>
+
+	<% if @user.status == "Admin" %>
+
+<td><%= link_to user.id, user %></td>
 <td><%= link_to user.name, user %></td>
+<td><%= link_to user.first_name, user %></td>
+<td><%= link_to user.company, user %></td>
+<td><%= link_to user.status, user %></td>
 <td><%= link_to user.email, user %></td>
+
+	<% elsif @user.status == "Staff" %>
+
+	Staff
+
+	<% elsif @user.status == "Client" %>
+
+	Client
+
+	<% end %>
+
+
+
+<% end %>

@@ -1,3 +1,6 @@
+<% if user_signed_in? %>
+
+
 <div id="wrapper">
 
     <!-- Sidebar -->
@@ -32,3 +35,9 @@ $("#menu-toggle").click(function(e) {
     $("#wrapper").toggleClass("toggled");
 });
 </script>
+
+<% else %>
+
+Not signed in
+
+<% end %>

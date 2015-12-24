@@ -3,11 +3,12 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    @user = current_user
   end
 
   def show
     @user = User.find(params[:id])
-    unless @user == current_user
+    unless @user == current_user || current_user.status == "Admin"
       redirect_to :back, :alert => "Access denied."
     end
   end

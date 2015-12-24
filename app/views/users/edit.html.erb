@@ -10,6 +10,8 @@
       <%= f.input :first_name, class: 'form-control' %>
     </div>
 
+<% if current_user.status == "Admin" %>
+
     <div class="form-group">
       
       <%= f.label :company %>
@@ -21,6 +23,7 @@
       <%= f.select :status, options_for_select([t("users.admin"),t("users.staff"),t("users.client")],:disabled => ["Select One"]), :class => 'genForm_dropBox' %>
     </div>
 
+<% end %>
 
 	<div class="form-actions">
 
